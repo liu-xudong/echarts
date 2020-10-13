@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #002266;
+  color: #fff;
+}
+.headbox {
+  height: 8vh;
+  text-align: center;
+  line-height: 8vh;
+  box-shadow: 0 0 10px #ccffcc;
+}
+.mainbox {
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  margin: 2vh 10px 0 10px;
+}
+.mainbox .column {
+  width: 25%;
+}
+.mainbox .column:nth-child(2) {
+  width: 48%;
+}
+.mainbox .panel {
+  position: relative;
+  height: 28vh;
+  margin: 1vh 0;
+  background-color: rgba(255, 255, 255, 0.03);
+}
+.mainbox .panel::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid #02a6b5;
+  border-top: 2px solid #02a6b5;
+  content: "";
+}
+.mainbox .panel::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #02a6b5;
+  border-top: 2px solid #02a6b5;
+  content: "";
+}
+.mainbox .panel .panel-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.mainbox .panel .panel-footer::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid #02a6b5;
+  border-bottom: 2px solid #02a6b5;
+  content: "";
+}
+.mainbox .panel .panel-footer::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #02a6b5;
+  border-bottom: 2px solid #02a6b5;
+  content: "";
+}
+.mainbox .panel h3 {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.mainbox .panel .chart {
+  height: 20vh;
+  background-color: pink;
+}
+.mainbox .no {
+  background-color: rgba(101, 132, 226, 0.1);
+  padding: 10px;
+}
