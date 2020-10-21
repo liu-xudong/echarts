@@ -16,17 +16,17 @@
 			<div class="column">
 				<div class="panel bar">
 					<h3>柱形图-就业行业</h3>
-					<div class="chart">图表</div>
+					<div class="chart"></div>
 					<div class="panel-footer"></div>
 				</div>
-				<div class="panel bar">
+				<div class="panel line">
 					<h3>柱形图-就业行业</h3>
-					<div class="chart">图表</div>
+					<div class="chart"></div>
 					<div class="panel-footer"></div>
 				</div>
-				<div class="panel bar">
+				<div class="panel pie">
 					<h3>柱形图-就业行业</h3>
-					<div class="chart">图表</div>
+					<div class="chart"></div>
 					<div class="panel-footer"></div>
 				</div>
 			</div>
@@ -34,28 +34,47 @@
 			<div class="column">
 				<!-- no模块 -->
 				<div class="no">
-					<div class="no-hd">数字</div>
-					<div class="no-bd">文字</div>
+					<div class="no-hd">
+						<ul>
+							<li>123456</li>
+							<li>100000</li>
+						</ul>
+					</div>
+					<div class="no-bd">
+						<ul>
+							<li>当前需求人数</li>
+							<li>市场供应人数</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 地图模块 -->
+				<div class="map">
+					<!-- <div class="map1"></div> -->
+					<div class="chart"></div>
 				</div>
 			</div>
 			
 			<div class="column">
-				<div class="panel bar">
+				<div class="panel bar1">
 					<h3>柱形图-就业行业</h3>
-					<div class="chart">图表</div>
+					<div class="chart"></div>
 					<div class="panel-footer"></div>
 				</div>
-				<div class="panel bar">
+				<div class="panel line1">
 					<h3>柱形图-就业行业</h3>
-					<div class="chart">图表</div>
+					<div class="chart"></div>
 					<div class="panel-footer"></div>
 				</div>
-				<div class="panel bar">
+				<div class="panel pie1">
 					<h3>柱形图-就业行业</h3>
-					<div class="chart">图表</div>
+					<div class="chart"></div>
 					<div class="panel-footer"></div>
 				</div>
 			</div>
 		</section>
 	</body>
+	<script src="js/dist/echarts.min.js"></script>
+	<!-- 必须先引入 chain.js 文件，因为中国地图需要 -->
+	<script src="js/myChart/chain.js"></script>
+	<script src="js/myChart/index.js"></script>
 </html>

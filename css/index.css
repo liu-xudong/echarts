@@ -84,9 +84,68 @@ body {
 }
 .mainbox .panel .chart {
   height: 20vh;
-  background-color: pink;
 }
 .mainbox .no {
   background-color: rgba(101, 132, 226, 0.1);
   padding: 10px;
+}
+.mainbox .no .no-hd {
+  position: relative;
+  border: 1px solid rgba(25, 186, 139, 0.17);
+}
+.mainbox .no .no-hd::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 30px;
+  height: 10px;
+  border-top: 2px solid #02A6B5;
+  border-left: 2px solid #02A6B5;
+}
+.mainbox .no .no-hd::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 30px;
+  height: 10px;
+  border-bottom: 2px solid #02A6B5;
+  border-right: 2px solid #02A6B5;
+}
+.mainbox .no .no-hd ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.mainbox .no .no-hd ul li {
+  position: relative;
+  width: 50%;
+  text-align: center;
+  line-height: 80px;
+  font-size: 70px;
+  color: #ffeb7b;
+}
+.mainbox .no .no-bd ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.mainbox .no .no-bd ul li {
+  position: relative;
+  width: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.mainbox .map {
+  height: 65vh;
+  position: relative;
+}
+.mainbox .map .chart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
